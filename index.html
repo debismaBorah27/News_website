@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>News Website</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,300;1,300&family=Ubuntu&display=swap" rel="stylesheet">
+    
+</head>
+<body>
+    <header>
+        <h1><i>The Times <span>Express</span></i></h1>
+    </header>
+<div class="left"><pre><img src="https://tse2.mm.bing.net/th?id=OIP.gFOR2OAsMMpS610KsqTkiQHaHa&pid=Api&P=0&h=180"><img src="https://tse1.mm.bing.net/th?id=OIP.iMfdeKHhU0SN_Jx1MAmugwHaHa&pid=Api&P=0&h=180"><img src="https://tse2.mm.bing.net/th?id=OIP.qPMNO_buvXblhaKOppuHmAHaHa&pid=Api&P=0&h=180"><img src="https://tse3.mm.bing.net/th?id=OIP.ozDiSGJlUqI6815cRlJiNAHaHa&pid=Api&P=0&h=180"></pre>
+</div>
+   
+    <div class="search-container">
+        <input type="text" class="news-input" name="search" id="search" placeholder="Search news">
+        <button id="search-button" class="search-button">Search</button>
+    </div>    
+<div class="container">
+
+    <nav>
+      
+        <ul>
+            <li id="Home" onclick="onNavItemClick('Home')"><a href="#">Home</a></li>
+            <li id="finance" onclick="onNavItemClick('finance')"><a href="#">Finance</a></li>
+            <li id="Technology" onclick="onNavItemClick('Technology')"><a href="#">Technology</a></li>
+            <li id="Science" onclick="onNavItemClick('Science')"><a href="#">Science</a></li>
+            <li id="Business" onclick="onNavItemClick('Business')"><a href="#">Business</a></li>
+            <li id="Sport" onclick="onNavItemClick('Sport')"><a href="#">Sport</a></li>
+            <li id="Travel" onclick="onNavItemClick('Travel')"><a href="#">Travel</a></li>
+            <li id="Worklife" onclick="onNavItemClick('Worklife')"><a href="#">Worklife</a></li>
+            <li id="Climate" onclick="onNavItemClick('Climate')"><a href="#">Climate</a></li>
+            <li id="Entertainment" onclick="onNavItemClick('Entertainment')"><a href="#">Entertainment</a></li>
+            <li id="Health" onclick="onNavItemClick('Health')"><a href="#">Health</a></li>
+        </ul>
+    </nav>
+</div>
+<div class="right">
+    <button class="btn">login</button>
+    <button class="btn">Email us</button>
+ </div>
+ <main>
+    <div class="cards-container container flex" id="cards-container">
+       
+    </div>
+</main>
+<template id="template-news-card">
+    <div class="card">
+        <div class="card-header">
+            <img src="https://via.placeholder.com/400x200" alt="news-image" id="news-img">
+        </div>
+        <div class="card-content">
+            <h3 id="news-title">This is the Title</h3>
+            <h6 class="news-source" id="news-source">End Gadget 26/08/2023</h6>
+            <p class="news-desc" id="news-desc">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Recusandae saepe quis voluptatum quisquam vitae doloremque facilis molestias quae ratione cumque!</p>
+        </div>
+    </div>
+</template>
+
+
+<script src="script.js"></script>
+</body>
+</html>

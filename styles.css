@@ -1,0 +1,192 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+header, nav, main, footer {
+    margin: 20px;
+    font-family: 'Roboto', sans-serif;
+    font-family: 'Ubuntu', sans-serif;
+    text-align: center;
+}
+
+header {
+    text-align: center;
+}
+nav{
+    background-color: rgb(190, 4, 4);
+    border-radius: 5px;
+    margin: 0;
+    padding: 10px;
+    font-family: 'Roboto', sans-serif;
+    font-family: 'Ubuntu', sans-serif;
+    
+}
+
+nav ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+nav li {
+    display: inline;
+    margin-right: 20px;
+}
+
+nav a {
+    text-decoration: none;
+    color: white;
+}
+nav li :hover,
+nav li .active {
+    color:black;
+}
+
+
+news-article {
+    margin-bottom: 30px;
+    display: inline;
+   
+}
+img{
+    width: 700px;
+    margin-right: 60%;
+    margin: 5px;
+}
+footer {
+    text-align: center;
+}
+.right {
+    display: inline;
+    border: 1px solid rgb(190, 4, 4) ;
+    color: white;
+    float: right;
+    margin: -50px 40px;
+}
+.btn {
+    background-color: black;
+    color: red;
+    cursor: pointer;
+    margin: 0px 10px;
+    padding: 4px 4px;
+    border: 1px solid white;
+    border-radius: 10px;
+    font-family: 'Roboto', sans-serif;
+    font-family: 'Ubuntu', sans-serif;
+    text-align: center;
+    
+}
+
+.btn:hover {
+    color: white;
+    background-color: black;
+}
+.left {
+    display: inline;
+    border: none;
+    color: white;
+    float: left;
+    margin: -65px 10px ;
+}
+
+.left img {
+    width: 35px;
+    margin: 6px;
+}
+h2{
+   margin-right: 50%;
+   color: black;
+   margin-bottom:150;
+   margin: 2px;
+}
+.lorem{
+    margin-left: 70%;
+    margin-right: 50%;
+    margin-bottom: -10%;
+
+}
+span{
+  color:rgb(190, 4, 4) ;
+}
+.search-container {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    display: flex;
+    
+}
+
+.search-input {
+    padding: 8px 12px;
+    border: 4px solid black;
+    border-radius: 5px 0 0 5px;
+    
+}
+
+.search-button {
+    padding: 8px 12px;
+    background-color: rgb(221, 7, 7) ;
+    border: 2px solid black;
+    border-radius:  0 5px 5px 0;
+    color: #fff;
+    cursor: pointer;
+    text-align: center;
+}
+.search-container input{
+    text-align: center;
+}
+.sm1{margin-top: 0px;
+    margin-bottom: 0px;
+    margin-left: 0px;
+display: flex;
+}
+.sm1 img {
+ 
+  margin-left:20px ;
+
+    width: 50px;
+}
+main {
+    padding-block: 20px;
+    margin-top: 80px;
+}
+
+.cards-container {
+    justify-content: space-between;
+    flex-wrap: wrap;
+    row-gap: 20px;
+    align-items: start;
+    display: flex;
+}
+
+.card {
+    width: 360px;
+    min-height: 400px;
+    box-shadow: 0 0 4px #d4ecff;
+    border-radius: 4px;
+    cursor: pointer;
+    background-color: #fff;
+    overflow: hidden;
+    transition: all 0.3s ease;
+}
+
+.card:hover {
+    box-shadow: 1px 1px 8px #d4ecff;
+    background-color: #f9fdff;
+    transform: translateY(-4px);
+}
+ 
+.card-header img {
+    width: 100%;
+    height: 180px;
+    object-fit: cover;
+}
+
+.card-content {
+    padding: 12px;
+}
+
+.news-source {
+    margin-block: 12px;
+} 
